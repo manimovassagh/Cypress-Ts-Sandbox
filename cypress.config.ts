@@ -6,7 +6,7 @@ module.exports = defineConfig({
 
     baseUrl: 'http://localhost:3000/',
 
-    setupNodeEvents(on, config) {
+    setupNodeEvents(on:any, config:any) {
       // implement node event listeners here
       require('@cypress/grep/src/plugin')(config);
       config.specPattern = ordering
