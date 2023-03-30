@@ -10,7 +10,8 @@ export const clickElementIfFound = (selector: string) => {
             console.log("This is element", el.find('.some'));
             cy.get(selector).click()
             cy.log('**Conditional Element found and can be asserted 😄**')
-        } else {
+        } else
+         {
             cy.log('No Element found but no error is there 😄 ')
         }
     })
