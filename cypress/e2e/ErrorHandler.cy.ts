@@ -1,4 +1,8 @@
-import ConditionalHelper, { clickElementIfFound } from "../utility/ComditionalTestHelper";
+import {
+    ConditionalHelper,
+    clickElementIfFound
+}
+    from "../utility/ComditionalTestHelper";
 
 describe('should not throw error if not find the element', { baseUrl: "https://www.gooogle.com" }, () => {
     beforeEach(() => {
@@ -18,7 +22,7 @@ describe('should not throw error if not find the element', { baseUrl: "https://w
         //     }
         // })
 
-       // clickElementIfFound("#L2AGLb > div")
+        // clickElementIfFound("#L2AGLb > div")
 
         //with function
         // ConditionalHelper().then((el) => {
@@ -36,12 +40,12 @@ describe('should not throw error if not find the element', { baseUrl: "https://w
         //with function
         ConditionalHelper().then((el) => {
 
-            el.find("#L2AGLb > div").length > 0 
-            ?  
-            cy.get('#L2AGLb > div').click() 
-            :
-            cy.log('No Element found but no error is there 😄 ')
-         
+            el.find("#L2AGLb > div").length > 0
+                ?
+                cy.get('#L2AGLb > div').click()
+                :
+                cy.log('No Element found but no error is there 😄 ')
+
         })
 
 
