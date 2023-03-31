@@ -7,13 +7,13 @@ fs.readFile('cypress/orderring/orderingWindows.ts', 'utf8', (err, data) => {
     }
 
     const _data = data.replace(/\\/g, "/");
-    console.log(_data);
+    // console.log(_data);
 
     fs.writeFile('cypress/orderring/converted.ts', _data, (err) => {
         if (err) {
             console.error(err);
         }
-        console.log('File writtten Task Done');
+        console.log('File written Task Done !!!');
 
     });
 
