@@ -1,3 +1,5 @@
+
+
 Cypress.on('uncaught:exception', (err, runnable) => {
     // returning false here prevents Cypress from
     // failing the test
@@ -12,5 +14,5 @@ Cypress.on('fail', (err, runnable) => {
 
 it.only('check the dummy dropdown', { baseUrl: 'https://www.globalsqa.com/demo-site/select-dropdown-menu/' }, () => {
     cy.visit('/')
-    cy.get("adasdasd")
+    cy.get("adasdasd").select('Algeria', { force: true })
 });
