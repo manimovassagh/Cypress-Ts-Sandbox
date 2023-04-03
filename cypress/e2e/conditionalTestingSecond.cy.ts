@@ -14,4 +14,6 @@ it('Second way for conditional testing', () => {
                 .find('.destroy')
                 .click({ force: true, multiple: true })
         })
+
+    
 });

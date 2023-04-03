@@ -29,11 +29,11 @@ describe('conditional testing', () => {
 		//cy.visit('http://127.0.0.1:5500/views/example.html')
 
 		/* correct way to do conditional test */
-		//cy.get('body').then((body) => {
-		//	console.log(body.find('label:contains(Readonly)'))
-		//	if (body.find('label:contains(Readonly)').length > 0)
-		//		cy.get('#edit').click()
-		//})
+		cy.get('body').then((body) => {
+			console.log(body.find('label:contains(Readonly)'))
+			if (body.find('label:contains(Readonly)').length > 0)
+				cy.get('#edit').click()
+		})
 
 		//cy.get('#name').type('Srinesh')
 		//cy.get('#age').type('27')
