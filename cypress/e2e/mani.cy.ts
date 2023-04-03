@@ -7,16 +7,11 @@ describe('first', { tags: '@mani' }, () => {
       body.append('<h1>This is append to body </h1>')
 
 
-     body.find('h1').each($el=>{
-      console.log($el.toString)
+      expect(body.find('h1').text()).to.contain('sandbox')
+      console.log( body.find('h1').eq(4).text());
       
-     })
-     });
-     
+    });
 
-
-
- 
 
 
   });
