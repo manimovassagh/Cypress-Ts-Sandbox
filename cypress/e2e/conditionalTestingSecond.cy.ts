@@ -1,6 +1,6 @@
 
 it('Second way for conditional testing', () => {
-
+//test some
     cy.visit('/').wait(100)
 
     cy.get('.todo')
